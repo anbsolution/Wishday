@@ -17,7 +17,14 @@ function allEvents(){
 }
 function filtered(){let list=allEvents().filter(e=>settings.state==="all"||e.state==="all"||e.state===settings.state);if(typeof WishCommand!=="undefined")list=WishCommand.apply(list);return typeof WishDiscovery!=="undefined"?WishDiscovery.apply(list):list}
 function on(d){return filtered().filter(e=>day(e.dateObj)===day(d))}
-function nextDate(e){let d=dateY(e.dateObj.toISOString().slice(5,10),today.getFullYear());if(d<new Date(today.getFullYear(),today.getMonth(),today.getDate()))d=dateY(e.dateObj.toISOString().slice(5,10),today.getFullYear()+1);return d}
+function nextDate(e){
+  const month=e.dateObj.getMonth();
+  const date=e.dateObj.getDate();
+  let d=new Date(today.getFullYear(),month,date);
+  const base=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+  if(d<base)d=new Date(today.getFullYear()+1,month,date);
+  return d;
+}
 function wish(e){
  if(e.wish)return e.wish;
  if(e.type==="birthday")return `Happy Birthday, ${e.name}! 🎂`;
@@ -69,7 +76,18 @@ $("#notifyBtn").onclick=async()=>{if(!("Notification"in window)){toast("Notifica
  toast("Notifications enabled"); if(typeof WishReminderEngine!=="undefined")WishReminderEngine.run();
 }else toast("Permission not granted")};
 $("#settings").onclick=()=>toast("Use the region selector below to change state");
-fetch("data/events.json").then(r=>r.json()).then(x=>{events=x;render();if(typeof WishDiscovery!=="undefined"){WishDiscovery.buildFilters();WishDiscovery.renderUpcoming()}});
+fetch("data/events.json").then(r=>r.json()).then(x=>{
+  events=x;
+  render();
+  if(typeof WishDiscovery!=="undefined"){
+    WishDiscovery.buildFilters();
+    WishDiscovery.renderUpcoming();
+  }
+}).catch(err=>{
+  console.error("WishDay event loading failed:",err);
+  render();
+  if(typeof WishDiscovery!=="undefined")WishDiscovery.buildFilters();
+});
 if("serviceWorker"in navigator)navigator.serviceWorker.register("service-worker.js");
 setInterval(hero,1000);setInterval(()=>{if(typeof WishDiscovery!=="undefined")WishDiscovery.renderUpcoming()},60000);
 
