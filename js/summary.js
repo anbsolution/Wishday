@@ -1,0 +1,1 @@
+const WishSummary={make(){const list=typeof on==="function"?on(new Date()):[];return list.length?list.map(e=>`${e.icon||"🎉"} ${e.name}`).join(" • "):"No events scheduled for today.";}};

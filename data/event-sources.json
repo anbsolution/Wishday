@@ -1,0 +1,20 @@
+{
+  "version": "4.0",
+  "purpose": "Source registry for automatic public-event refresh",
+  "sources": [
+    {
+      "id": "india-public-holidays",
+      "name": "India public holiday feed",
+      "url": "https://date.nager.at/",
+      "type": "public-holidays",
+      "enabled": true
+    },
+    {
+      "id": "manual-curated",
+      "name": "WishDay curated events",
+      "type": "curated",
+      "enabled": true
+    }
+  ],
+  "policy": "Imported dates are candidates; the UI should display source metadata for externally supplied dates."
+}

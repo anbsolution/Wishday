@@ -1,0 +1,56 @@
+[
+  {
+    "id": "holi",
+    "name": "Holi",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "holi",
+    "rule": "external_verified"
+  },
+  {
+    "id": "diwali",
+    "name": "Diwali",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "diwali",
+    "rule": "external_verified"
+  },
+  {
+    "id": "eid-al-fitr",
+    "name": "Eid al-Fitr",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "festival",
+    "rule": "external_verified"
+  },
+  {
+    "id": "eid-al-adha",
+    "name": "Eid al-Adha",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "festival",
+    "rule": "external_verified"
+  },
+  {
+    "id": "janmashtami",
+    "name": "Janmashtami",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "festival",
+    "rule": "external_verified"
+  },
+  {
+    "id": "raksha-bandhan",
+    "name": "Raksha Bandhan",
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "festival",
+    "rule": "external_verified"
+  }
+]

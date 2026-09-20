@@ -1,0 +1,36 @@
+name: Refresh public event feed
+on:
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download public holiday feed
+        run: |
+          python - <<'PY'
+          import json, urllib.request, pathlib
+          years=[2026,2027,2028]
+          all_data=[]
+          for year in years:
+            url=f"https://date.nager.at/api/v3/PublicHolidays/{year}/IN"
+            try:
+              data=json.load(urllib.request.urlopen(url,timeout=30))
+              for x in data:
+                all_data.append({"id":f"source-{x['date']}","name":x["localName"],"type":"national","category":"Public Holiday","dateType":"absolute","date":x["date"],"state":"all","theme":"national","source":"Nager.Date"})
+            except Exception as e:
+              print("Year failed",year,e)
+          pathlib.Path("data/public-holidays.json").write_text(json.dumps(all_data,ensure_ascii=False,indent=2))
+          print("Wrote",len(all_data),"records")
+          PY
+      - name: Commit refreshed feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/public-holidays.json
+          git diff --cached --quiet || git commit -m "chore: refresh public holiday feed"
+          git push

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "republic-day",
+    "name": "Republic Day",
+    "rule": "fixed",
+    "month": 1,
+    "day": 26,
+    "type": "national",
+    "category": "National Day",
+    "state": "all",
+    "theme": "national"
+  },
+  {
+    "id": "independence-day",
+    "name": "Independence Day",
+    "rule": "fixed",
+    "month": 8,
+    "day": 15,
+    "type": "national",
+    "category": "National Day",
+    "state": "all",
+    "theme": "national"
+  },
+  {
+    "id": "gandhi-jayanti",
+    "name": "Gandhi Jayanti",
+    "rule": "fixed",
+    "month": 10,
+    "day": 2,
+    "type": "national",
+    "category": "National Day",
+    "state": "all",
+    "theme": "national"
+  },
+  {
+    "id": "bihar-day",
+    "name": "Bihar Day",
+    "rule": "fixed",
+    "month": 3,
+    "day": 22,
+    "type": "state",
+    "category": "Bihar",
+    "state": "Bihar",
+    "theme": "state"
+  },
+  {
+    "id": "haryana-day",
+    "name": "Haryana Day",
+    "rule": "fixed",
+    "month": 11,
+    "day": 1,
+    "type": "state",
+    "category": "Haryana",
+    "state": "Haryana",
+    "theme": "state"
+  },
+  {
+    "id": "christmas",
+    "name": "Christmas Day",
+    "rule": "fixed",
+    "month": 12,
+    "day": 25,
+    "type": "festival",
+    "category": "Festival",
+    "state": "all",
+    "theme": "christmas"
+  },
+  {
+    "id": "labour-day",
+    "name": "International Workers' Day",
+    "rule": "fixed",
+    "month": 5,
+    "day": 1,
+    "type": "important",
+    "category": "International Day",
+    "state": "all",
+    "theme": "important"
+  }
+]

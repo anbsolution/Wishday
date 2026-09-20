@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "provider": "Web Push",
+  "publicKey": "SET_IN_FUTURE",
+  "note": "Never commit a private VAPID key. A server-side push sender is required for true background push delivery."
+}

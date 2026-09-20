@@ -1,0 +1,37 @@
+[
+  {
+    "id": "all",
+    "name": "All Events",
+    "icon": "✨"
+  },
+  {
+    "id": "birthday",
+    "name": "Birthdays",
+    "icon": "🎂"
+  },
+  {
+    "id": "anniversary",
+    "name": "Anniversaries",
+    "icon": "💍"
+  },
+  {
+    "id": "festival",
+    "name": "Festivals",
+    "icon": "🎉"
+  },
+  {
+    "id": "national",
+    "name": "National",
+    "icon": "🇮🇳"
+  },
+  {
+    "id": "state",
+    "name": "State",
+    "icon": "🏛️"
+  },
+  {
+    "id": "important",
+    "name": "Important Days",
+    "icon": "🌍"
+  }
+]

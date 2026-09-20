@@ -1,0 +1,9 @@
+{
+  "theme": "auto",
+  "language": "hinglish",
+  "region": "all",
+  "notifyToday": true,
+  "notifyTomorrow": true,
+  "notifyPersonal": true,
+  "notifyDaysBefore": 1
+}

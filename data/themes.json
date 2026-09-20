@@ -1,0 +1,82 @@
+{
+  "birthday": {
+    "title": "Birthday Celebration",
+    "gradient": [
+      "#6d5dfc",
+      "#ff6fb1"
+    ],
+    "emoji": "🎂"
+  },
+  "anniversary": {
+    "title": "Anniversary",
+    "gradient": [
+      "#a83279",
+      "#d38312"
+    ],
+    "emoji": "💍"
+  },
+  "national": {
+    "title": "National Celebration",
+    "gradient": [
+      "#ef7d32",
+      "#5146b8"
+    ],
+    "emoji": "🇮🇳"
+  },
+  "festival": {
+    "title": "Festival Celebration",
+    "gradient": [
+      "#ff8a00",
+      "#e83e8c"
+    ],
+    "emoji": "🎉"
+  },
+  "holi": {
+    "title": "Holi",
+    "gradient": [
+      "#ff4b91",
+      "#ffb347"
+    ],
+    "emoji": "🌈"
+  },
+  "diwali": {
+    "title": "Diwali",
+    "gradient": [
+      "#6b2500",
+      "#f3a400"
+    ],
+    "emoji": "🪔"
+  },
+  "christmas": {
+    "title": "Christmas",
+    "gradient": [
+      "#137a45",
+      "#bd2938"
+    ],
+    "emoji": "🎄"
+  },
+  "state": {
+    "title": "State Celebration",
+    "gradient": [
+      "#3157d5",
+      "#7a5cff"
+    ],
+    "emoji": "🏛️"
+  },
+  "important": {
+    "title": "Important Day",
+    "gradient": [
+      "#2b5876",
+      "#4e4376"
+    ],
+    "emoji": "🌍"
+  },
+  "nature": {
+    "title": "Nature & Wellness",
+    "gradient": [
+      "#168d61",
+      "#6cbf59"
+    ],
+    "emoji": "🌿"
+  }
+}

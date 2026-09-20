@@ -1,0 +1,16 @@
+{
+  "appName": "WishDay",
+  "version": "18.0.0",
+  "defaultView": "today",
+  "features": {
+    "share": true,
+    "calendarExport": true,
+    "backup": true,
+    "notifications": true,
+    "offline": true,
+    "dashboardStats": true,
+    "calendar": true,
+    "globalSearch": true,
+    "yearlyRecurrence": true
+  }
+}

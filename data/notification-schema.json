@@ -1,0 +1,17 @@
+{
+  "channels": [
+    "today",
+    "tomorrow",
+    "personal"
+  ],
+  "leadTimes": [
+    0,
+    1,
+    7
+  ],
+  "quietHours": {
+    "enabled": false,
+    "start": "22:00",
+    "end": "07:00"
+  }
+}

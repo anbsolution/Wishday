@@ -1,0 +1,19 @@
+{
+  "fields": [
+    "id",
+    "type",
+    "name",
+    "date",
+    "relation",
+    "note",
+    "notify",
+    "notifyDaysBefore",
+    "repeatYearly",
+    "createdAt"
+  ],
+  "notifyDaysBefore": [
+    0,
+    1
+  ],
+  "repeatYearly": true
+}

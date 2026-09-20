@@ -1,0 +1,15 @@
+{
+  "dedupeBy": [
+    "id",
+    "date",
+    "name"
+  ],
+  "personalPriority": "high",
+  "sourcePriority": [
+    "personal",
+    "public-holiday",
+    "dynamic",
+    "curated"
+  ],
+  "maxUpcomingDays": 30
+}

@@ -1,0 +1,25 @@
+{
+  "presets": [
+    {
+      "id": "morning",
+      "label": "Morning summary",
+      "default": true,
+      "hour": 8,
+      "minute": 0
+    },
+    {
+      "id": "tomorrow",
+      "label": "Tomorrow reminder",
+      "default": true,
+      "hour": 20,
+      "minute": 0
+    },
+    {
+      "id": "event-day",
+      "label": "Event-day reminder",
+      "default": true,
+      "hour": 8,
+      "minute": 0
+    }
+  ]
+}

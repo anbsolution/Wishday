@@ -1,0 +1,30 @@
+{
+  "birthday": {
+    "hi": [
+      "जन्मदिन की हार्दिक शुभकामनाएँ! आपका आने वाला वर्ष खुशियों और सफलता से भरा रहे। 🎂✨",
+      "आपको जन्मदिन की ढेरों शुभकामनाएँ। हमेशा मुस्कुराते रहें और स्वस्थ रहें। ❤️"
+    ],
+    "en": [
+      "Happy Birthday! Wishing you a year filled with happiness, good health and success. 🎂✨",
+      "Many happy returns of the day! May your new year of life be wonderful. ❤️"
+    ],
+    "hinglish": [
+      "Happy Birthday! Aapka har din khushiyon aur success se bhara rahe. 🎂✨",
+      "Janamdin ki bahut-bahut wishes! Hamesha smile karte raho aur khush raho. ❤️"
+    ]
+  },
+  "anniversary": {
+    "hi": [
+      "सालगिरह की हार्दिक शुभकामनाएँ! आपका साथ हमेशा खुशियों से भरा रहे। 💍❤️",
+      "आप दोनों को वैवाहिक वर्षगाँठ की ढेरों शुभकामनाएँ। 🌹"
+    ],
+    "en": [
+      "Happy Anniversary! Wishing you both many more years of love and happiness. 💍❤️",
+      "Warm wishes on your anniversary. May your journey together stay beautiful. 🌹"
+    ],
+    "hinglish": [
+      "Happy Anniversary! Aap dono ka saath hamesha pyaar aur khushiyon se bhara rahe. 💍❤️",
+      "Anniversary ki bahut-bahut wishes! Aapki jodi hamesha khush rahe. 🌹"
+    ]
+  }
+}
