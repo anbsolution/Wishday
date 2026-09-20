@@ -1,0 +1,73 @@
+/* WishDay V21 — mobile single-screen dashboard */
+@media (max-width:600px){
+  html,body{width:100%;height:100%;height:100dvh;overflow:hidden!important;overscroll-behavior:none}
+  body{padding:0!important;font-size:12px}
+  .topbar{position:relative!important;height:54px;padding:8px 12px!important}
+  .brand{font-size:21px}.tagline{font-size:8px}.topbar .round{display:none!important}
+  .global-search{position:relative!important;height:46px;padding:5px 10px!important;background:var(--wd-bg)!important}
+  .global-search input{height:36px;padding:7px 10px!important;font-size:11px!important}
+  .global-search button{width:36px;height:36px}
+  main{height:calc(100dvh - 100px);overflow:hidden!important;display:block;padding:0 0 4px}
+
+  #detailSection,#settingsPanel,#wishTools,#personalTools,#statusLegend,
+  #timelineSection,#upcomingSection,#reminderSettings,#smartUpdates,
+  #wishLanguage,#regionChooser{display:none!important}
+
+  .hero{margin:4px 10px 6px!important;padding:13px 16px!important;min-height:122px;height:122px;border-radius:20px!important;box-shadow:0 8px 20px var(--wd-soft)!important}
+  .eyebrow{font-size:8px}.hero h1{font-size:22px!important;margin:4px 0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hero p{font-size:10px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .countdown{font-size:22px!important;margin-top:10px!important;letter-spacing:-.4px}.hero small{font-size:8px}
+
+  .quick-grid{grid-template-columns:repeat(2,1fr)!important;gap:5px!important;padding:0 10px!important}
+  .quick{min-height:54px;height:54px;padding:5px 4px!important;border-radius:13px!important}
+  .quick b{font-size:10px;margin-top:2px}.quick small{font-size:8px;margin-top:1px}
+
+  .section{max-width:none!important;margin:6px 10px!important;padding:0!important}
+  .section-head{margin-bottom:4px!important;min-height:22px}.section-head h2{font-size:13px!important;margin:0!important}
+
+  .filters{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px!important;overflow:hidden!important;padding:0!important}
+  .filter{min-width:0;height:25px;padding:4px 2px!important;font-size:8px!important;text-align:center;overflow:hidden;text-overflow:ellipsis}
+
+  #themeCenter{margin-top:5px!important}
+  .theme-options{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:4px!important}
+  .theme-choice{min-height:28px!important;height:28px!important;display:flex!important;justify-content:center;align-items:center;gap:2px;padding:3px 2px!important;border-radius:9px!important;text-align:center!important}
+  .theme-emoji{font-size:12px!important}.theme-name{font-size:8px!important}.theme-choice small{display:none!important}
+
+  #notificationCenter{margin-top:5px!important}
+  .notify-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:4px!important}
+  .notify-grid .check-row{min-height:31px;height:31px;padding:3px 2px!important;justify-content:center;font-size:8px!important;text-align:center;overflow:hidden;white-space:nowrap}
+  .notify-grid .check-row input{width:14px!important;height:14px!important;flex:0 0 auto}
+  .notify-grid button{grid-column:auto!important;min-height:31px;height:31px;padding:3px 2px!important;font-size:8px!important;white-space:nowrap}
+
+  #appControls{margin-top:5px!important}
+  #appControls .tool-grid{grid-template-columns:1fr 1fr!important;gap:4px!important}
+  #appControls .tool-grid button{height:28px;padding:3px 4px!important;font-size:8px!important}
+  #appUpdateNote{display:none!important}
+
+  #daySection{margin-top:5px!important}
+  #daySection .section-head{margin-bottom:3px!important}
+  #daySection .section-head .primary{padding:4px 7px!important;font-size:8px!important}
+  #eventList{max-height:78px;overflow:hidden!important}
+  #eventList .event{min-height:36px;height:36px;margin:3px 0!important;padding:4px 7px!important;gap:6px;border-radius:10px!important}
+  #eventList .icon{width:26px;height:26px;border-radius:8px;font-size:13px}
+  #eventList .title{font-size:9px}#eventList .meta,#eventList .wish{font-size:7px;margin-top:0}
+  #eventList .event button{padding:3px 5px;font-size:9px}
+
+  #calendarSection,#peopleSection{max-height:calc(100dvh - 112px);overflow:hidden!important}
+  #calendarSection .calendar,#peopleSection #peopleList{max-height:calc(100dvh - 170px);overflow:hidden!important}
+  #calendarSection .day{min-height:39px;height:39px;padding:3px;font-size:8px}
+  #calendarSection .calhead{font-size:7px;padding:2px}
+  #peopleSection .event{min-height:42px;margin:3px 0;padding:5px 7px}
+
+  .bottom{display:none!important}
+  #toast{bottom:10px!important;z-index:1000;font-size:9px;padding:7px 10px}
+  dialog{max-width:calc(100vw - 20px);max-height:calc(100dvh - 20px)}
+}
+@media (max-width:600px) and (max-height:720px){
+  .hero{height:105px;min-height:105px;padding:9px 13px!important}
+  .countdown{font-size:18px!important;margin-top:6px!important}
+  .quick,.quick-grid{height:47px}.quick{min-height:47px}
+  .theme-choice{height:25px!important;min-height:25px!important}
+  .notify-grid .check-row,.notify-grid button{height:27px;min-height:27px}
+  #eventList{max-height:52px}
+}
