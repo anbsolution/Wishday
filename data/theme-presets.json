@@ -1,26 +1,14 @@
 [
-  {
-    "id": "sunrise",
-    "name": "Sunrise",
-    "emoji": "\ud83c\udf05",
-    "className": "theme-sunrise"
-  },
-  {
-    "id": "midnight",
-    "name": "Midnight",
-    "emoji": "\ud83c\udf19",
-    "className": "theme-midnight"
-  },
-  {
-    "id": "festival",
-    "name": "Festival",
-    "emoji": "\ud83c\udf89",
-    "className": "theme-festival"
-  },
-  {
-    "id": "classic",
-    "name": "Classic",
-    "emoji": "\u2728",
-    "className": "theme-classic"
-  }
+{"id":"auto","name":"Auto","emoji":"⚙️","description":"Automatically switches by time"},
+{"id":"light","name":"Light","emoji":"☀️","description":"Clean bright theme"},
+{"id":"dark","name":"Dark","emoji":"🌙","description":"Comfortable dark theme"},
+{"id":"neon","name":"Neon","emoji":"💜","description":"Bright cyber glow"},
+{"id":"royal","name":"Royal","emoji":"👑","description":"Premium purple-gold"},
+{"id":"ocean","name":"Ocean","emoji":"🌊","description":"Cool blue aqua"},
+{"id":"sunset","name":"Sunset","emoji":"🌅","description":"Warm orange-pink"},
+{"id":"forest","name":"Forest","emoji":"🌲","description":"Natural green"},
+{"id":"rose","name":"Rose","emoji":"🌹","description":"Soft pink-red"},
+{"id":"midnight","name":"Midnight","emoji":"🌌","description":"Deep night"},
+{"id":"festival","name":"Festival","emoji":"🎉","description":"Colorful celebration"},
+{"id":"classic","name":"Classic","emoji":"✨","description":"Simple classic look"}
 ]

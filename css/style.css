@@ -26,3 +26,34 @@ input[type="checkbox"]{width:22px;height:22px;accent-color:#6d5dfc}.event button
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.stats-grid>div{background:#f7f7fb;border-radius:12px;padding:9px 4px;text-align:center}.stats-grid b{display:block;font-size:17px}.stats-grid span{font-size:9px;opacity:.65}
 
 .global-search{position:sticky;top:0;z-index:20;display:flex;gap:6px;padding:8px 10px;background:inherit}.global-search input{flex:1;border:1px solid #e7e7ef;border-radius:12px;padding:11px 12px;font-size:12px;outline:none}.global-search button{width:38px;border:1px solid #e7e7ef;background:white;border-radius:11px}.global-search input:focus{border-color:#6d5dfc}
+
+/* WishDay V19 Theme System */
+:root{--wd-bg:#f5f6fb;--wd-surface:#fff;--wd-text:#171827;--wd-muted:#77798c;--wd-border:#e7e7ef;--wd-accent:#6d5dfc;--wd-soft:#f0efff;--wd-bottom:#fffffff2}
+:root[data-theme="light"]{--wd-bg:#f5f6fb;--wd-surface:#fff;--wd-text:#171827;--wd-muted:#77798c;--wd-border:#e7e7ef;--wd-accent:#6d5dfc;--wd-soft:#f0efff;--wd-bottom:#fffffff2}
+:root[data-theme="dark"]{--wd-bg:#11131b;--wd-surface:#1a1d28;--wd-text:#f3f5ff;--wd-muted:#a9aec2;--wd-border:#303545;--wd-accent:#8b7cff;--wd-soft:#25213c;--wd-bottom:#151822f2}
+:root[data-theme="neon"]{--wd-bg:#080a12;--wd-surface:#111525;--wd-text:#f6f4ff;--wd-muted:#b8b2d9;--wd-border:#38315e;--wd-accent:#d84cff;--wd-soft:#26153d;--wd-bottom:#0d0f19f5}
+:root[data-theme="royal"]{--wd-bg:#100b1c;--wd-surface:#1c122d;--wd-text:#fff6df;--wd-muted:#c8b9a3;--wd-border:#4b365d;--wd-accent:#d6a83d;--wd-soft:#322139;--wd-bottom:#140d20f5}
+:root[data-theme="ocean"]{--wd-bg:#07151c;--wd-surface:#0d222c;--wd-text:#e9fbff;--wd-muted:#9ec1cb;--wd-border:#244653;--wd-accent:#25bfe8;--wd-soft:#103746;--wd-bottom:#091a22f5}
+:root[data-theme="sunset"]{--wd-bg:#1b1017;--wd-surface:#28151d;--wd-text:#fff4ed;--wd-muted:#d0aaa0;--wd-border:#57313b;--wd-accent:#ff7b5c;--wd-soft:#432229;--wd-bottom:#1d1118f5}
+:root[data-theme="forest"]{--wd-bg:#09150f;--wd-surface:#11231a;--wd-text:#effff4;--wd-muted:#a7c2ae;--wd-border:#2d4d38;--wd-accent:#43d17b;--wd-soft:#173725;--wd-bottom:#0b1710f5}
+:root[data-theme="rose"]{--wd-bg:#1b0d15;--wd-surface:#29121f;--wd-text:#fff1f7;--wd-muted:#d0a6b7;--wd-border:#563046;--wd-accent:#ff5d9d;--wd-soft:#451d34;--wd-bottom:#1d0e17f5}
+:root[data-theme="midnight"]{--wd-bg:#070a14;--wd-surface:#11172a;--wd-text:#edf2ff;--wd-muted:#9da9c8;--wd-border:#273454;--wd-accent:#728cff;--wd-soft:#182440;--wd-bottom:#090d18f5}
+:root[data-theme="festival"]{--wd-bg:#130b19;--wd-surface:#21122b;--wd-text:#fff5ff;--wd-muted:#d0b4d7;--wd-border:#59396a;--wd-accent:#ff5fd2;--wd-soft:#3b1c43;--wd-bottom:#160b1bf5}
+:root[data-theme="classic"]{--wd-bg:#f3f1ec;--wd-surface:#fffdf7;--wd-text:#28241e;--wd-muted:#82786c;--wd-border:#ded5c8;--wd-accent:#8a6a3f;--wd-soft:#f1eadf;--wd-bottom:#fffdf7f2}
+body{background:var(--wd-bg);color:var(--wd-text)}
+.topbar{background:var(--wd-bg)}
+.tagline,.meta,.wish,.quick small,.small-note,.timeline-content span{color:var(--wd-muted)}
+.quick,.event,.select,.tool-grid button,.tool-button,.filter,.theme-choice,.global-search input,.global-search button,.round,#prev,#next,.day{background:var(--wd-surface);color:var(--wd-text);border-color:var(--wd-border)}
+.icon{background:var(--wd-soft)}
+.primary,.filter.active,.notify-grid button{background:var(--wd-accent);border-color:var(--wd-accent)}
+.bottom{background:var(--wd-bottom);border-color:var(--wd-border)}
+.bottom button{color:var(--wd-muted)}
+.settings-grid select,.modal input,.modal select,.modal textarea,.generator-grid textarea{background:var(--wd-surface);color:var(--wd-text);border-color:var(--wd-border)}
+.notify-grid .check-row,.legend span,.stats-grid>div{background:var(--wd-soft);color:var(--wd-text)}
+.theme-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.theme-choice{min-height:70px;display:grid;grid-template-columns:30px 1fr;grid-template-rows:auto auto;align-items:center;text-align:left;padding:9px 10px;border-radius:14px;cursor:pointer}
+.theme-choice.active{border-color:var(--wd-accent);box-shadow:0 0 0 2px var(--wd-soft)}
+.theme-emoji{grid-row:span 2;font-size:21px}
+.theme-name{font-size:11px;font-weight:850}
+.theme-choice small{font-size:8px;color:var(--wd-muted);line-height:1.2}
+.hero{box-shadow:0 15px 35px var(--wd-soft)}
