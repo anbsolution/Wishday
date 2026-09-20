@@ -10,7 +10,7 @@ const day=(d)=>`${d.getMonth()+1}-${d.getDate()}`, key=d=>d.toISOString().slice(
 const fmt=d=>d.toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"});
 const dateY=(mmdd,y)=>{let [m,d]=mmdd.split("-").map(Number);return new Date(y,m-1,d)};
 function allEvents(){
- const fixed=events.map(e=>({...e,dateObj:e.mmdd?dateY(e.mmdd,today.getFullYear()):new Date(e.date),personal:false}));
+ const fixed=events.map(e=>({...e,dateObj:e.month&&e.day?new Date(today.getFullYear(),e.month-1,e.day):e.mmdd?dateY(e.mmdd,today.getFullYear()):new Date(e.date),personal:false}));
  const dyn=dynamicEvents.map(e=>({...e,dateObj:dateY(String(e.month).padStart(2,"0")+"-"+String(e.day).padStart(2,"0"),today.getFullYear()),personal:false}));
  const ext=(window.publicHolidays||[]).map(e=>({...e,dateObj:new Date(e.date+"T00:00:00"),personal:false}));
  return [...fixed,...dyn,...ext,...people.map(e=>({...e,dateObj:dateY(e.date.slice(5),today.getFullYear()),personal:true,category:e.type}))];
