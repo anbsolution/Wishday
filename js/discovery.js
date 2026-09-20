@@ -14,3 +14,13 @@ const WishDiscovery={
   box.innerHTML=out.length?out.map(e=>`<div class="event"><div class="icon">${e.icon||"🎉"}</div><div class="event-main"><div class="title">${e.name}</div><div class="meta">${e.showDate.toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short"})} • ${e.category||e.type}</div></div></div>`).join(""):`<div class="event"><div class="event-main">No matching events in the next 7 days.</div></div>`;
  }
 };
+document.addEventListener("DOMContentLoaded",()=>{
+  setTimeout(()=>{
+    try{
+      WishDiscovery.buildFilters();
+      WishDiscovery.renderUpcoming();
+    }catch(err){
+      console.error("WishDay filter initialization failed:",err);
+    }
+  },100);
+});
